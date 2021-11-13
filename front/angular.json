@@ -64,7 +64,6 @@
               ],
               "outputHashing": "all",
               "baseHref": "#base-href#",
-              "deployUrl": "static/",
               "progress": false
             },
             "development": {

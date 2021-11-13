@@ -194,35 +194,11 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${basedir}/target/classes/public/static</outputDirectory>
-                            <resources>
-                                <resource>
-                                    <directory>front/dist/package</directory>
-                                    <filtering>false</filtering>
-                                    <excludes>
-                                        <exclude>index.html</exclude>
-                                        <exclude>static/**/*.*</exclude>
-                                    </excludes>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>exec-copy-index-assets</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
                             <outputDirectory>${basedir}/target/classes/public</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>front/dist/package</directory>
                                     <filtering>false</filtering>
-                                    <includes>
-                                        <include>index.html</include>
-                                        <include>static/**/*.*</include>
-                                    </includes>
                                 </resource>
                             </resources>
                         </configuration>
